@@ -59,3 +59,4 @@ of the results.
 - [Background Subtraction](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_video/py_bg_subtraction/py_bg_subtraction.html#background-subtraction)
 - [Changing Colorspace](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_colorspaces/py_colorspaces.html#converting-colorspaces)
 - [Detect RGB in image](https://www.geeksforgeeks.org/detect-the-rgb-color-from-a-webcam-using-python-opencv/)
+- [Dominant Color in Image](https://code.likeagirl.io/finding-dominant-colour-on-an-image-b4e075f98097)
