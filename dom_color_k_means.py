@@ -43,6 +43,8 @@ def plot_colors2(hist, centroids):
 
 
 cap = cv2.VideoCapture(0)
+height = int(cap.get(4))
+width = int (cap.get(3))
 
 while(1):   
     _, frame = cap.read() 
@@ -60,12 +62,14 @@ while(1):
     
 
     #draw color in a box
-    print(color)
-
+    #print(color)
+s
     bgr_color = (color[2], color[1], color[0])
     #bgr_color = (0,255,0)
 
-    cv2.rectangle(frame,(10,10),(100,100),bgr_color,3)
+    dom = np.zeros((height,width,3),np.uint8)
+    dom = cv2.rectangle(dom,(0,0),(width,height),bgr_color,-1) #fill image with dominant color in bgr
+    cv2.imshow('dominant color', dom)
     # plt.axis("off")
     # plt.imshow(bar)
     # plt.show()
