@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 
 #Using HSV color scheme
+"""
+Reference:
+Contour Features: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_contours/py_contour_features/py_contour_features.html#contour-features
+Changing ColorSpace: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_colorspaces/py_colorspaces.html#converting-colorspaces
+Creating bound box in video: https://stackoverflow.com/questions/35533538/creating-bounding-box-across-an-object-in-a-video
+
+"""
 import cv2
 import numpy as np
 

@@ -3,7 +3,10 @@
 """
 Description:
 Obtains dominant RGB value within the target area denoted in the blue box and displays it in an external window, "dominant color"
-
+References: 
+Dominant Color in Image: https://code.likeagirl.io/finding-dominant-colour-on-an-image-b4e075f98097
+Contour Features: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_contours/py_contour_features/py_contour_features.html#contour-features
+Changing ColorSpace: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_colorspaces/py_colorspaces.html#converting-colorspaces
 """
 import cv2
 import numpy as np
