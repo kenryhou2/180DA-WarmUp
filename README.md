@@ -4,7 +4,7 @@
 ### Class Syllabus
 [EE180D by Kambiz Shoarinejad, Fall 2020](https://ccle.ucla.edu/pluginfile.php/3532596/local_ucla_syllabus/syllabus/74925/ECE180DA_Fall2020_syllabus_1%20(Last%20modified%202020-09-16--18-21).pdf)
 
-## Tutorial 0 (Week 0)
+## Tutorial 0: Intro to Software (Git, OpenCV, Python) (Week 0)
 [Tutorial Prompt](https://ccle.ucla.edu/mod/resource/view.php?id=3250395)
 
 - Task 1: 
@@ -60,3 +60,30 @@ of the results.
 - [Changing Colorspace](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_colorspaces/py_colorspaces.html#converting-colorspaces)
 - [Detect RGB in image](https://www.geeksforgeeks.org/detect-the-rgb-color-from-a-webcam-using-python-opencv/)
 - [Dominant Color in Image](https://code.likeagirl.io/finding-dominant-colour-on-an-image-b4e075f98097)
+
+## Tutorial 1: Intro to Hardware (Raspi, SSH, WiFi) (Week 1-2)
+[Tutorial Prompt](https://ccle.ucla.edu/pluginfile.php/3776107/mod_resource/content/1/HW_tutorial.pdf)
+
+- Task 1: Wired Connection via USB with SSH
+- Used MicroSD card (E:) to setup text files as per tutorial.
+- Able to access E drive with windows cmd $e: and ls equivalent $dir.
+- Successfully able to ssh into the raspi.
+- **Make sure the data cable is in USB port, not power port!!!**
+
+- Task 2: Wireless Connection 
+- **Make sure the connection is the 2.4GHz network only!!**
+- Used wireless router to scan for IP address.
+- also used nmap app on windows cmd line, see references
+- $nmap -sn 192.168.1.0/24
+- Later changed alias to hkou-raspberrypi instead of defaul raspberrypi.local
+- Successfully able to ping internet and ssh into raspberrypi
+
+- Task 3: Install Git and BerryConda
+- Git installation successful, report activity with cloning and pushing to 180DAWarmUp git repo successful.
+- Screenshot of python3 test.py script runs successfully
+- **TODO**: Issue with running conda activate, could be issues with path??
+
+
+
+#### List of References for Tutorial 1
+- [Using nmap to find IP address of Raspi](https://howchoo.com/pi/find-your-raspberry-pis-ip-address)
