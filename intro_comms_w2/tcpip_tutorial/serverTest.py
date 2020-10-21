@@ -14,6 +14,6 @@ while True:
 
 		from_client += data.decode('utf-8')
 		print(from_client)
-		conn.send("I am Server - Kenry\n")
+		conn.send("I am Server - Kenry\n".encode())
 	conn.close()
 	print("client disconnected\n")
