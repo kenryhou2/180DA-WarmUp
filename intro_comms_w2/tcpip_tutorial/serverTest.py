@@ -2,7 +2,7 @@ import socket
 serv = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
 #assigns a port for the server that listens to clients connecting to this port
-serv.bing(('0.0.0.0', 8080))
+serv.bind(('192.168.1.239', 8081))
 serv.listen(5)
 while True:
 	conn, addr = serv.accept()
@@ -12,8 +12,8 @@ while True:
 		if not data: 
 			break
 
-		from_client += data
+		from_client += data.decode('utf-8')
 		print(from_client)
-		conn.send("I am Server - Kenr\n")
+		conn.send("I am Server - Kenry\n")
 	conn.close()
 	print("client disconnected\n")
